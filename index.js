@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 import Hello from './Hello';
 import Hi from './Hi';
 import './style.css';
+import ToolTip1 from "./tooltip";
 
 class App extends Component {
   constructor() {
