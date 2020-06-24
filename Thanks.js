@@ -1,7 +1,7 @@
 import React,{ Component } from 'react';
 
 
-class Tooltip1 extends Component
+class Thanks extends Component
 {
   constructor()
   {
@@ -13,8 +13,8 @@ class Tooltip1 extends Component
 
   render()
   {
-return( <div>tooltip...</div>)
+return( <div>Thk...</div>)
   }
 }
 
-export default Tooltip1
+export default Thanks

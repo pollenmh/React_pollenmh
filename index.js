@@ -3,7 +3,9 @@ import { render } from 'react-dom';
 import Hello from './Hello';
 import Hi from './Hi';
 import './style.css';
-import ToolTip1 from "./tooltip";
+import Thanks from './Thanks'
+
+
 
 class App extends Component {
   constructor() {
@@ -35,6 +37,7 @@ console.log(this.state.arr1);
         <p>
           Start editing to see some magic happen :)
         </p>
+      <Thanks/>
       </div>
     );
   }

@@ -12,13 +12,22 @@ class Hi extends Component
   localhandler()
   {
    //alert('layover..');
-   this.state={display:1};
+   let temp = this.state.display;
+   this.setState({display:!temp});
   }
 
   render()
   {
-return( <div><h1  onClick={() =>{this.localhandler();this.props.onMyClick(this.props.index,0)}}>{this.props.text}</h1>
-<Tooltip1/>
+    const display = this.state.display;
+    let showtooltip;
+{if(display)
+{
+showtooltip = <Tooltip1/>;
+}}
+
+return(
+   <div><h1  onClick={() =>{this.localhandler();this.props.onMyClick(this.props.index,0)}}>{this.props.text}</h1>
+{showtooltip}
 </div>
 
 
